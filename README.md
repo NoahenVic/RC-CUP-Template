@@ -242,7 +242,7 @@ Pas dit aan als je een andere pagina wil.
 
 ## Clean URLs
 
-De `vercel.json` zorgt voor nette links:
+De `vercel.json` gebruikt `cleanUrls`, zodat je nette links krijgt:
 - `/sponsors` i.p.v. `/sponsors.html`
 - `/info`, `/terms`, etc.
 
@@ -307,6 +307,8 @@ EXTRA
 - Voeg 3 testimonials toe (kort, 1 zin) in index.json onder `testimonials`.
 - Voeg 1 kort persbericht‑quote toe onder `pressQuote`.
 ```
+
+**Tip:** Gebruik deze prompt bij voorkeur met AI‑agents zoals Claude Co‑Work, Cursor of Codex voor de snelste workflow.
 
 ---
 

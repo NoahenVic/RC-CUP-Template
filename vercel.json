@@ -1,11 +1,4 @@
 ﻿{
-  "version": 2,
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/info", "dest": "/info.html" },
-    { "src": "/sponsors", "dest": "/sponsors.html" },
-    { "src": "/terms", "dest": "/terms.html" },
-    { "src": "/thankyou", "dest": "/thankyou.html" },
-    { "src": "/test", "dest": "/test.html" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
