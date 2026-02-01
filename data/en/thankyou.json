@@ -1,0 +1,38 @@
+﻿{
+    "meta":  {
+                 "title":  "RC Cup Team Template | Thank You",
+                 "description":  "Thank you page for sponsors and supporters."
+             },
+    "hero":  {
+                 "kicker":  "Thank you",
+                 "title":  "We appreciate your support",
+                 "highlight":  "Sponsors",
+                 "lead":  "This project happens because of partners like you."
+             },
+    "steps":  [
+                  {
+                      "title":  "You are listed",
+                      "text":  "Your logo appears on our website and posts."
+                  },
+                  {
+                      "title":  "We keep you updated",
+                      "text":  "You receive progress updates and race results."
+                  },
+                  {
+                      "title":  "We celebrate together",
+                      "text":  "Join us on race day and see the car in action."
+                  }
+              ],
+    "links":  [
+                  {
+                      "label":  "See sponsor packages",
+                      "href":  "sponsors.html",
+                      "style":  "primary"
+                  },
+                  {
+                      "label":  "Back to home",
+                      "href":  "index.html",
+                      "style":  "ghost"
+                  }
+              ]
+}

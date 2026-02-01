@@ -1,0 +1,175 @@
+﻿{
+    "meta":  {
+                 "title":  "RC Cup Team Template | Home",
+                 "description":  "Een strak template voor RC Cup teams met bewerkbare JSON data."
+             },
+    "hero":  {
+                 "kicker":  "RC Cup 2026",
+                 "title":  "Bouw. Race. Leer.",
+                 "highlight":  "Aurora",
+                 "lead":  "We ontwerpen en bouwen een elektrische RC-wagen en racen tegen andere scholen.",
+                 "actions":  [
+                                 {
+                                     "label":  "Ontmoet het team",
+                                     "href":  "info.html",
+                                     "style":  "primary"
+                                 },
+                                 {
+                                     "label":  "Sponsor ons",
+                                     "href":  "sponsors.html",
+                                     "style":  "ghost"
+                                 }
+                             ],
+                 "quickLinks":  [
+                                    {
+                                        "label":  "Galerij",
+                                        "href":  "#gallery"
+                                    },
+                                    {
+                                        "label":  "Sponsors",
+                                        "href":  "#sponsors"
+                                    },
+                                    {
+                                        "label":  "Contact",
+                                        "href":  "#contact"
+                                    }
+                                ]
+             },
+    "countdown":  {
+                      "label":  "Racedag",
+                      "target":  "2026-02-13T09:30:00+01:00"
+                  },
+    "stats":  [
+                  {
+                      "label":  "Leerlingen",
+                      "value":  "12"
+                  },
+                  {
+                      "label":  "Bouwuren",
+                      "value":  "160+"
+                  },
+                  {
+                      "label":  "Prototypes",
+                      "value":  "3"
+                  }
+              ],
+    "aboutCards":  [
+                       {
+                           "title":  "Wat we doen",
+                           "text":  "We bouwen een volledige RC-wagen van chassis tot elektronica en aerodynamica."
+                       },
+                       {
+                           "title":  "Waarom het telt",
+                           "text":  "Praktijkgericht leren, teamwork en racen met echte randvoorwaarden."
+                       },
+                       {
+                           "title":  "Hoe je helpt",
+                           "text":  "Sponsors dekken materialen, tests en verplaatsingen naar racedagen."
+                       }
+                   ],
+    "team":  {
+                 "kicker":  "Team",
+                 "title":  "Maak kennis met de crew",
+                 "members":  [
+                                 {
+                                     "name":  "Alex Rivers",
+                                     "role":  "Teamlead"
+                                 },
+                                 {
+                                     "name":  "Jamie Park",
+                                     "role":  "Aandrijving"
+                                 },
+                                 {
+                                     "name":  "Morgan Lee",
+                                     "role":  "Chassis"
+                                 },
+                                 {
+                                     "name":  "Sam Carter",
+                                     "role":  "Elektronica"
+                                 }
+                             ]
+             },
+    "gallery":  {
+                    "kicker":  "Galerij",
+                    "title":  "Bouwmomenten",
+                    "items":  [
+                                  {
+                                      "label":  "CAD-sessie",
+                                      "image":  "assets/img/placeholder.svg"
+                                  },
+                                  {
+                                      "label":  "Assemblage",
+                                      "image":  "assets/img/placeholder.svg"
+                                  },
+                                  {
+                                      "label":  "Testrit",
+                                      "image":  "assets/img/placeholder.svg"
+                                  }
+                              ]
+                },
+    "sponsors":  {
+                     "kicker":  "Sponsors",
+                     "title":  "Dank aan onze partners",
+                     "items":  [
+                                   {
+                                       "name":  "Hoofdsponsor",
+                                       "logo":  "assets/img/placeholder.svg"
+                                   },
+                                   {
+                                       "name":  "Tech partner",
+                                       "logo":  "assets/img/placeholder.svg"
+                                   },
+                                   {
+                                       "name":  "Lokale partner",
+                                       "logo":  "assets/img/placeholder.svg"
+                                   }
+                               ],
+                     "cta":  {
+                                 "title":  "Wil je sponsoren?",
+                                 "text":  "We bieden pakketten en maatwerkopties.",
+                                 "buttons":  [
+                                                 {
+                                                     "label":  "Bekijk pakketten",
+                                                     "href":  "sponsors.html",
+                                                     "style":  "primary"
+                                                 },
+                                                 {
+                                                     "label":  "Contact",
+                                                     "href":  "#contact",
+                                                     "style":  "ghost"
+                                                 }
+                                             ]
+                             }
+                 },
+    "contact":  {
+                    "title":  "Contact",
+                    "lead":  "Stuur ons een bericht of vraag de sponsorbrochure.",
+                    "email":  "team@example.com",
+                    "form":  {
+                                 "fields":  [
+                                                {
+                                                    "label":  "Naam",
+                                                    "type":  "text",
+                                                    "name":  "name",
+                                                    "placeholder":  "Jouw naam"
+                                                },
+                                                {
+                                                    "label":  "E-mail",
+                                                    "type":  "email",
+                                                    "name":  "email",
+                                                    "placeholder":  "jij@example.com"
+                                                },
+                                                {
+                                                    "label":  "Bericht",
+                                                    "type":  "textarea",
+                                                    "name":  "message",
+                                                    "placeholder":  "Hoe kunnen we helpen?"
+                                                }
+                                            ],
+                                 "action":  "https://formspree.io/f/yourFormId",
+                                 "method":  "POST",
+                                 "redirect":  "thankyou.html"
+                             },
+                    "submitLabel":  "Verstuur bericht"
+                }
+}

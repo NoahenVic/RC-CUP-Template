@@ -1,0 +1,21 @@
+﻿{
+  "meta": {
+    "title": "RC Cup Team Template | Bedankt",
+    "description": "Bedankpagina voor sponsors en supporters."
+  },
+  "hero": {
+    "kicker": "Bedankt",
+    "title": "We waarderen jullie steun",
+    "highlight": "Sponsors",
+    "lead": "Dit project bestaat dankzij partners zoals jullie."
+  },
+  "steps": [
+    { "title": "Je staat op de site", "text": "Je logo verschijnt op onze website en posts." },
+    { "title": "We houden je op de hoogte", "text": "Je ontvangt updates en raceresultaten." },
+    { "title": "Samen vieren", "text": "Kom langs op racedag en zie de wagen in actie." }
+  ],
+  "links": [
+    { "label": "Bekijk sponsor pakketten", "href": "sponsors.html", "style": "primary" },
+    { "label": "Terug naar home", "href": "index.html", "style": "ghost" }
+  ]
+}

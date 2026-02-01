@@ -1,0 +1,37 @@
+﻿{
+  "meta": {
+    "title": "RC Cup Team Template | Voorwaarden",
+    "description": "Voorwaarden voor sponsors en teambeleid."
+  },
+  "hero": {
+    "kicker": "Voorwaarden",
+    "title": "Sponsorvoorwaarden",
+    "highlight": "Overzicht",
+    "lead": "Duidelijke afspraken houden het project gezond en eerlijk."
+  },
+  "sections": [
+    {
+      "title": "Algemeen",
+      "items": [
+        "Sponsors krijgen zichtbaarheid volgens het pakket.",
+        "Betaling kan cash of in materiaal.",
+        "Logo's moeten in het juiste formaat aangeleverd worden."
+      ]
+    },
+    {
+      "title": "Gebruik van merk",
+      "items": [
+        "We gebruiken sponsorlogo's enkel voor teamcommunicatie.",
+        "Grote wijzigingen delen we op voorhand.",
+        "Sponsors mogen verwijdering vragen na het seizoen."
+      ]
+    },
+    {
+      "title": "Data en privacy",
+      "items": [
+        "Contactgegevens gebruiken we enkel voor sponsorcommunicatie.",
+        "We delen sponsorinformatie niet met derden."
+      ]
+    }
+  ]
+}

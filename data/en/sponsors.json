@@ -1,0 +1,95 @@
+﻿{
+    "meta":  {
+                 "title":  "RC Cup Team Template | Sponsors",
+                 "description":  "Sponsor packages and support details."
+             },
+    "hero":  {
+                 "kicker":  "Sponsors",
+                 "title":  "Support our build",
+                 "highlight":  "2026",
+                 "lead":  "Sponsors cover materials, testing, and race costs."
+             },
+    "packages":  [
+                     {
+                         "name":  "Bronze",
+                         "price":  "40-50 EUR",
+                         "featured":  false,
+                         "perks":  [
+                                       "Logo on the site",
+                                       "Mention in social posts",
+                                       "Small sticker on the car"
+                                   ],
+                         "requirements":  [
+                                              "Logo file (PNG or JPG)",
+                                              "Link to sponsor website"
+                                          ]
+                     },
+                     {
+                         "name":  "Gold",
+                         "price":  "150-250 EUR",
+                         "featured":  false,
+                         "perks":  [
+                                       "Logo on the car",
+                                       "Mention in social posts",
+                                       "Logo on the site"
+                                   ],
+                         "requirements":  [
+                                              "Logo file (PNG or SVG)",
+                                              "Short company description"
+                                          ]
+                     },
+                     {
+                         "name":  "Diamond",
+                         "price":  "400-700 EUR",
+                         "featured":  false,
+                         "perks":  [
+                                       "Large logo on the car",
+                                       "Priority mention on socials",
+                                       "Logo on team shirts"
+                                   ],
+                         "requirements":  [
+                                              "Logo file (PNG or SVG)",
+                                              "Brand colors"
+                                          ]
+                     },
+                     {
+                         "name":  "Ultra",
+                         "price":  "900-1200 EUR",
+                         "featured":  true,
+                         "perks":  [
+                                       "Main sponsor status",
+                                       "Custom car livery",
+                                       "Large logo on shirts",
+                                       "Feature on homepage"
+                                   ],
+                         "requirements":  [
+                                              "Logo file (SVG preferred)",
+                                              "Brand guidelines"
+                                          ]
+                     }
+                 ],
+    "practical":  {
+                      "title":  "Practical details",
+                      "items":  [
+                                    "Invoices possible",
+                                    "Custom packages on request",
+                                    "We can accept material sponsorship"
+                                ]
+                  },
+    "cta":  {
+                "title":  "Ready to sponsor?",
+                "text":  "Email us and we will send the sponsor deck.",
+                "buttons":  [
+                                {
+                                    "label":  "Email us",
+                                    "href":  "mailto:team@example.com",
+                                    "style":  "primary"
+                                },
+                                {
+                                    "label":  "Download deck",
+                                    "href":  "#",
+                                    "style":  "ghost"
+                                }
+                            ]
+            }
+}

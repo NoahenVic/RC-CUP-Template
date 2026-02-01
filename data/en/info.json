@@ -1,0 +1,74 @@
+﻿{
+    "meta":  {
+                 "title":  "RC Cup Team Template | Team",
+                 "description":  "Team details, values, and roles."
+             },
+    "hero":  {
+                 "kicker":  "About",
+                 "title":  "Who we are",
+                 "highlight":  "Team Aurora",
+                 "lead":  "A student team focused on engineering, speed, and clean design."
+             },
+    "sections":  [
+                     {
+                         "title":  "What we do",
+                         "text":  "We design, build, and test an electric RC car for the RC Cup."
+                     },
+                     {
+                         "title":  "How we work",
+                         "text":  "We organize into sub teams for chassis, powertrain, aero, and outreach."
+                     }
+                 ],
+    "values":  [
+                   {
+                       "title":  "Craft",
+                       "text":  "We care about detail and reliability."
+                   },
+                   {
+                       "title":  "Speed",
+                       "text":  "We chase performance through testing."
+                   },
+                   {
+                       "title":  "Teamwork",
+                       "text":  "We share knowledge and help each other."
+                   }
+               ],
+    "leaders":  [
+                    {
+                        "name":  "Alex Rivers",
+                        "role":  "Team lead",
+                        "note":  "Coordination and strategy"
+                    },
+                    {
+                        "name":  "Jamie Park",
+                        "role":  "Technical lead",
+                        "note":  "Design and testing"
+                    }
+                ],
+    "members":  [
+                    {
+                        "name":  "Sam Carter",
+                        "role":  "Electronics"
+                    },
+                    {
+                        "name":  "Morgan Lee",
+                        "role":  "Chassis"
+                    },
+                    {
+                        "name":  "Casey Nguyen",
+                        "role":  "Outreach"
+                    },
+                    {
+                        "name":  "Taylor Quinn",
+                        "role":  "Aero"
+                    }
+                ],
+    "headings":  {
+                     "valuesTitle":  "How we work",
+                     "valuesKicker":  "Values",
+                     "leadersTitle":  "Leadership",
+                     "leadersKicker":  "Leads",
+                     "membersTitle":  "Team members",
+                     "membersKicker":  "Crew"
+                 }
+}

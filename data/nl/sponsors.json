@@ -1,0 +1,87 @@
+﻿{
+  "meta": {
+    "title": "RC Cup Team Template | Sponsors",
+    "description": "Sponsor pakketten en info."
+  },
+  "hero": {
+    "kicker": "Sponsors",
+    "title": "Steun onze bouw",
+    "highlight": "2026",
+    "lead": "Sponsors dekken materialen, testen en racekosten."
+  },
+  "packages": [
+    {
+      "name": "Brons",
+      "price": "40-50 EUR",
+      "featured": false,
+      "perks": [
+        "Logo op de site",
+        "Vermelding in social posts",
+        "Kleine sticker op de wagen"
+      ],
+      "requirements": [
+        "Logo (PNG of JPG)",
+        "Link naar website"
+      ]
+    },
+    {
+      "name": "Goud",
+      "price": "150-250 EUR",
+      "featured": false,
+      "perks": [
+        "Logo op de wagen",
+        "Vermelding in social posts",
+        "Logo op de site"
+      ],
+      "requirements": [
+        "Logo (PNG of SVG)",
+        "Korte bedrijfsbeschrijving"
+      ]
+    },
+    {
+      "name": "Diamant",
+      "price": "400-700 EUR",
+      "featured": false,
+      "perks": [
+        "Groot logo op de wagen",
+        "Prioritaire vermelding op socials",
+        "Logo op teamkledij"
+      ],
+      "requirements": [
+        "Logo (PNG of SVG)",
+        "Huisstijlkleuren"
+      ]
+    },
+    {
+      "name": "Ultra",
+      "price": "900-1200 EUR",
+      "featured": true,
+      "perks": [
+        "Status als hoofdsponsor",
+        "Custom livery",
+        "Groot logo op kledij",
+        "Feature op de homepage"
+      ],
+      "requirements": [
+        "Logo (SVG aangeraden)",
+        "Brand guidelines"
+      ]
+    }
+  ],
+  "practical": {
+    "title": "Praktisch",
+    "items": [
+      "Facturen mogelijk",
+      "Maatwerkpakketten op aanvraag",
+      "Materiële sponsoring is mogelijk"
+    ]
+  },
+  "cta": {
+    "title": "Klaar om te sponsoren?",
+    "text": "Mail ons en we sturen de sponsorbrochure.",
+    "buttons": [
+      { "label": "Mail ons", "href": "mailto:team@example.com", "style": "primary" },
+      { "label": "Download brochure", "href": "#", "style": "ghost" }
+    ]
+  }
+}

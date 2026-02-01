@@ -1,0 +1,82 @@
+﻿{
+  "brand": {
+    "en": {
+      "name": "Team Aurora",
+      "logoText": "A",
+      "tagline": "RC Cup Team",
+      "email": "team@example.com"
+    },
+    "nl": {
+      "name": "Team Aurora",
+      "logoText": "A",
+      "tagline": "RC Cup Team",
+      "email": "team@example.com"
+    }
+  },
+  "nav": {
+    "en": {
+      "cards": [
+        {
+          "label": "Start",
+          "tone": "primary",
+          "links": [
+            { "label": "Home", "href": "index.html" },
+            { "label": "Team", "href": "info.html" }
+          ]
+        },
+        {
+          "label": "Sponsors",
+          "tone": "secondary",
+          "links": [
+            { "label": "Packages", "href": "sponsors.html" },
+            { "label": "Thank you", "href": "thankyou.html" }
+          ]
+        },
+        {
+          "label": "More",
+          "tone": "tertiary",
+          "links": [
+            { "label": "Terms", "href": "terms.html" },
+            { "label": "Contact", "href": "index.html#contact" }
+          ]
+        }
+      ],
+      "actions": [
+        { "label": "SFX", "id": "sfx-toggle", "title": "Toggle SFX" },
+        { "label": "EN", "id": "lang-toggle", "title": "Switch language" }
+      ]
+    },
+    "nl": {
+      "cards": [
+        {
+          "label": "Start",
+          "tone": "primary",
+          "links": [
+            { "label": "Home", "href": "index.html" },
+            { "label": "Team", "href": "info.html" }
+          ]
+        },
+        {
+          "label": "Sponsors",
+          "tone": "secondary",
+          "links": [
+            { "label": "Pakketten", "href": "sponsors.html" },
+            { "label": "Bedankt", "href": "thankyou.html" }
+          ]
+        },
+        {
+          "label": "Meer",
+          "tone": "tertiary",
+          "links": [
+            { "label": "Voorwaarden", "href": "terms.html" },
+            { "label": "Contact", "href": "index.html#contact" }
+          ]
+        }
+      ],
+      "actions": [
+        { "label": "SFX", "id": "sfx-toggle", "title": "SFX aan/uit" },
+        { "label": "NL", "id": "lang-toggle", "title": "Wissel taal" }
+      ]
+    }
+  }
+}

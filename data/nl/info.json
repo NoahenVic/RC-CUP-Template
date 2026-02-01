@@ -1,0 +1,74 @@
+﻿{
+    "meta":  {
+                 "title":  "RC Cup Team Template | Team",
+                 "description":  "Teaminfo, waarden en rollen."
+             },
+    "hero":  {
+                 "kicker":  "Over ons",
+                 "title":  "Wie we zijn",
+                 "highlight":  "Team Aurora",
+                 "lead":  "Een studententeam met focus op engineering, snelheid en strak design."
+             },
+    "sections":  [
+                     {
+                         "title":  "Wat we doen",
+                         "text":  "We ontwerpen, bouwen en testen een elektrische RC-wagen voor de RC Cup."
+                     },
+                     {
+                         "title":  "Hoe we werken",
+                         "text":  "We verdelen ons in subteams voor chassis, aandrijving, aero en communicatie."
+                     }
+                 ],
+    "values":  [
+                   {
+                       "title":  "Vakmanschap",
+                       "text":  "We letten op detail en betrouwbaarheid."
+                   },
+                   {
+                       "title":  "Snelheid",
+                       "text":  "We zoeken performance via testen."
+                   },
+                   {
+                       "title":  "Teamwork",
+                       "text":  "We delen kennis en helpen elkaar."
+                   }
+               ],
+    "leaders":  [
+                    {
+                        "name":  "Alex Rivers",
+                        "role":  "Teamlead",
+                        "note":  "Coördinatie en strategie"
+                    },
+                    {
+                        "name":  "Jamie Park",
+                        "role":  "Technisch lead",
+                        "note":  "Ontwerp en testen"
+                    }
+                ],
+    "members":  [
+                    {
+                        "name":  "Sam Carter",
+                        "role":  "Elektronica"
+                    },
+                    {
+                        "name":  "Morgan Lee",
+                        "role":  "Chassis"
+                    },
+                    {
+                        "name":  "Casey Nguyen",
+                        "role":  "Communicatie"
+                    },
+                    {
+                        "name":  "Taylor Quinn",
+                        "role":  "Aero"
+                    }
+                ],
+    "headings":  {
+                     "valuesTitle":  "Hoe we werken",
+                     "valuesKicker":  "Waarden",
+                     "leadersTitle":  "Leiderschap",
+                     "leadersKicker":  "Leads",
+                     "membersTitle":  "Teamleden",
+                     "membersKicker":  "Crew"
+                 }
+}

@@ -1,0 +1,175 @@
+﻿{
+    "meta":  {
+                 "title":  "RC Cup Team Template | Home",
+                 "description":  "A clean template for RC Cup teams with editable JSON data."
+             },
+    "hero":  {
+                 "kicker":  "RC Cup 2026",
+                 "title":  "Build. Race. Learn.",
+                 "highlight":  "Aurora",
+                 "lead":  "We design and build an electric RC car and race against other schools.",
+                 "actions":  [
+                                 {
+                                     "label":  "Meet the team",
+                                     "href":  "info.html",
+                                     "style":  "primary"
+                                 },
+                                 {
+                                     "label":  "Sponsor us",
+                                     "href":  "sponsors.html",
+                                     "style":  "ghost"
+                                 }
+                             ],
+                 "quickLinks":  [
+                                    {
+                                        "label":  "Gallery",
+                                        "href":  "#gallery"
+                                    },
+                                    {
+                                        "label":  "Sponsors",
+                                        "href":  "#sponsors"
+                                    },
+                                    {
+                                        "label":  "Contact",
+                                        "href":  "#contact"
+                                    }
+                                ]
+             },
+    "countdown":  {
+                      "label":  "Race day",
+                      "target":  "2026-02-13T09:30:00+01:00"
+                  },
+    "stats":  [
+                  {
+                      "label":  "Students",
+                      "value":  "12"
+                  },
+                  {
+                      "label":  "Build hours",
+                      "value":  "160+"
+                  },
+                  {
+                      "label":  "Prototype versions",
+                      "value":  "3"
+                  }
+              ],
+    "aboutCards":  [
+                       {
+                           "title":  "What we do",
+                           "text":  "We build a full RC car from chassis to electronics and aerodynamics."
+                       },
+                       {
+                           "title":  "Why it matters",
+                           "text":  "Hands on engineering, teamwork, and racing under real constraints."
+                       },
+                       {
+                           "title":  "How you can help",
+                           "text":  "Sponsors cover materials, testing, and travel to race days."
+                       }
+                   ],
+    "team":  {
+                 "kicker":  "Team",
+                 "title":  "Meet the crew",
+                 "members":  [
+                                 {
+                                     "name":  "Alex Rivers",
+                                     "role":  "Team lead"
+                                 },
+                                 {
+                                     "name":  "Jamie Park",
+                                     "role":  "Powertrain"
+                                 },
+                                 {
+                                     "name":  "Morgan Lee",
+                                     "role":  "Chassis"
+                                 },
+                                 {
+                                     "name":  "Sam Carter",
+                                     "role":  "Electronics"
+                                 }
+                             ]
+             },
+    "gallery":  {
+                    "kicker":  "Gallery",
+                    "title":  "Build moments",
+                    "items":  [
+                                  {
+                                      "label":  "CAD pass",
+                                      "image":  "assets/img/placeholder.svg"
+                                  },
+                                  {
+                                      "label":  "Assembly day",
+                                      "image":  "assets/img/placeholder.svg"
+                                  },
+                                  {
+                                      "label":  "Test run",
+                                      "image":  "assets/img/placeholder.svg"
+                                  }
+                              ]
+                },
+    "sponsors":  {
+                     "kicker":  "Sponsors",
+                     "title":  "Thank you partners",
+                     "items":  [
+                                   {
+                                       "name":  "Main sponsor",
+                                       "logo":  "assets/img/placeholder.svg"
+                                   },
+                                   {
+                                       "name":  "Tech sponsor",
+                                       "logo":  "assets/img/placeholder.svg"
+                                   },
+                                   {
+                                       "name":  "Local partner",
+                                       "logo":  "assets/img/placeholder.svg"
+                                   }
+                               ],
+                     "cta":  {
+                                 "title":  "Want to sponsor?",
+                                 "text":  "We offer sponsor packages and custom options.",
+                                 "buttons":  [
+                                                 {
+                                                     "label":  "View packages",
+                                                     "href":  "sponsors.html",
+                                                     "style":  "primary"
+                                                 },
+                                                 {
+                                                     "label":  "Contact",
+                                                     "href":  "#contact",
+                                                     "style":  "ghost"
+                                                 }
+                                             ]
+                             }
+                 },
+    "contact":  {
+                    "title":  "Contact",
+                    "lead":  "Send us a message or request a sponsor deck.",
+                    "email":  "team@example.com",
+                    "form":  {
+                                 "fields":  [
+                                                {
+                                                    "label":  "Name",
+                                                    "type":  "text",
+                                                    "name":  "name",
+                                                    "placeholder":  "Your name"
+                                                },
+                                                {
+                                                    "label":  "Email",
+                                                    "type":  "email",
+                                                    "name":  "email",
+                                                    "placeholder":  "you@example.com"
+                                                },
+                                                {
+                                                    "label":  "Message",
+                                                    "type":  "textarea",
+                                                    "name":  "message",
+                                                    "placeholder":  "How can we help?"
+                                                }
+                                            ],
+                                 "action":  "https://formspree.io/f/yourFormId",
+                                 "method":  "POST",
+                                 "redirect":  "thankyou.html"
+                             },
+                    "submitLabel":  "Send message"
+                }
+}

@@ -1,0 +1,26 @@
+﻿{
+    "meta":  {
+                 "title":  "RC Cup Team Template | Test",
+                 "description":  "Preview page for testing layout sections."
+             },
+    "hero":  {
+                 "kicker":  "Test page",
+                 "title":  "Layout preview",
+                 "highlight":  "Sandbox",
+                 "lead":  "Use this page to test components and sections."
+             },
+    "cards":  [
+                  {
+                      "title":  "Card one",
+                      "text":  "Swap this text in data/test.json"
+                  },
+                  {
+                      "title":  "Card two",
+                      "text":  "Add more cards to test layout"
+                  },
+                  {
+                      "title":  "Card three",
+                      "text":  "You can remove this page later"
+                  }
+              ]
+}

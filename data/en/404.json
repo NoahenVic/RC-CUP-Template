@@ -1,0 +1,28 @@
+﻿{
+    "meta":  {
+                 "title":  "Page not found",
+                 "description":  "The page you requested does not exist."
+             },
+    "hero":  {
+                 "kicker":  "404",
+                 "title":  "Page not found",
+                 "highlight":  "Oops",
+                 "lead":  "The page you requested does not exist or has moved."
+             },
+    "links":  [
+                  {
+                      "label":  "Go to home",
+                      "href":  "index.html",
+                      "style":  "primary"
+                  },
+                  {
+                      "label":  "View sponsors",
+                      "href":  "sponsors.html",
+                      "style":  "ghost"
+                  }
+              ],
+    "tips":  [
+                 "Check the URL for typos",
+                 "Use the menu to find the right page"
+             ]
+}

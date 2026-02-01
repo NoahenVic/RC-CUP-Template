@@ -1,0 +1,20 @@
+﻿{
+  "meta": {
+    "title": "Pagina niet gevonden",
+    "description": "De gevraagde pagina bestaat niet."
+  },
+  "hero": {
+    "kicker": "404",
+    "title": "Pagina niet gevonden",
+    "highlight": "Oeps",
+    "lead": "De pagina bestaat niet of is verplaatst."
+  },
+  "links": [
+    { "label": "Ga naar home", "href": "index.html", "style": "primary" },
+    { "label": "Bekijk sponsors", "href": "sponsors.html", "style": "ghost" }
+  ],
+  "tips": [
+    "Controleer de URL op typfouten",
+    "Gebruik het menu om de juiste pagina te vinden"
+  ]
+}

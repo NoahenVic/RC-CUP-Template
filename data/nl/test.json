@@ -1,0 +1,17 @@
+﻿{
+  "meta": {
+    "title": "RC Cup Team Template | Test",
+    "description": "Voorbeeldpagina om layout te testen."
+  },
+  "hero": {
+    "kicker": "Testpagina",
+    "title": "Layout preview",
+    "highlight": "Sandbox",
+    "lead": "Gebruik deze pagina om componenten te testen."
+  },
+  "cards": [
+    { "title": "Kaart één", "text": "Pas deze tekst aan in data/nl/test.json" },
+    { "title": "Kaart twee", "text": "Voeg extra kaarten toe om layout te testen" },
+    { "title": "Kaart drie", "text": "Deze pagina mag je later verwijderen" }
+  ]
+}

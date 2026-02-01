@@ -1,0 +1,37 @@
+﻿{
+    "meta":  {
+                 "title":  "RC Cup Team Template | Terms",
+                 "description":  "Terms and conditions for sponsors and team policies."
+             },
+    "hero":  {
+                 "kicker":  "Terms",
+                 "title":  "Sponsorship terms",
+                 "highlight":  "Overview",
+                 "lead":  "Clear agreements keep the project healthy and fair."
+             },
+    "sections":  [
+                     {
+                         "title":  "General",
+                         "items":  [
+                                       "Sponsors receive visibility as listed in the package.",
+                                       "Payments can be cash or material support.",
+                                       "Logos must be provided in the required format."
+                                   ]
+                     },
+                     {
+                         "title":  "Brand use",
+                         "items":  [
+                                       "We use sponsor logos only for team promotion.",
+                                       "Major changes will be shared in advance.",
+                                       "Sponsors may request removal after the season."
+                                   ]
+                     },
+                     {
+                         "title":  "Data and privacy",
+                         "items":  [
+                                       "Contact data is only used for sponsor communication.",
+                                       "We do not share sponsor data with third parties."
+                                   ]
+                     }
+                 ]
+}
