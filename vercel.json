@@ -1,10 +1,11 @@
 ﻿{
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/info", "destination": "/info.html" },
-    { "source": "/sponsors", "destination": "/sponsors.html" },
-    { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/thankyou", "destination": "/thankyou.html" },
-    { "source": "/test", "destination": "/test.html" }
+  "version": 2,
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/info", "dest": "/info.html" },
+    { "src": "/sponsors", "dest": "/sponsors.html" },
+    { "src": "/terms", "dest": "/terms.html" },
+    { "src": "/thankyou", "dest": "/thankyou.html" },
+    { "src": "/test", "dest": "/test.html" }
   ]
 }
