@@ -312,9 +312,3 @@ EXTRA
 
 ---
 
-## Vervolg
-
-Als je wilt kan ik:
-- Een volledige NL/EN set voor jouw team invullen.
-- Extra componenten toevoegen (FAQ, timeline, media kit).
-- Automatisch sponsorlogo’s genereren met placeholder styling.
