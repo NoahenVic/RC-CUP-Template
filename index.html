@@ -1,110 +1,82 @@
-﻿<!doctype html>
-<html lang="en">
+<!doctype html>
+<html lang="nl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="RC Cup team template">
-    <title>RC Cup Team Template</title>
+    <meta name="description" content="RC Cup site generator">
+    <title>RC Cup Generator</title>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="index">
-    <header class="site-header">
-      <div class="card-nav-container">
-        <nav class="card-nav" id="card-nav">
-          <div class="card-nav-top">
-            <button class="hamburger-menu" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
-              <span class="hamburger-line"></span>
-              <span class="hamburger-line"></span>
-            </button>
-            <div class="logo-container" aria-label="Site logo">
-              <span class="logo" id="logo-mark"></span>
-              <span class="logo-text" id="logo-text">Team</span>
-            </div>
-            <div class="card-nav-actions" id="nav-actions"></div>
-          </div>
-          <div class="card-nav-content" id="nav-cards"></div>
-        </nav>
-      </div>
-    </header>
-
+  <body>
     <main>
       <section class="hero">
         <div class="hero-bg"></div>
         <div class="container">
-          <span class="kicker" id="hero-kicker"></span>
-          <h1><span id="hero-title"></span> <span class="highlight" id="hero-highlight"></span></h1>
-          <p class="lead" id="hero-lead"></p>
-          <div class="row hero-actions" id="hero-actions"></div>
-          <div class="row" id="hero-links"></div>
-          <div class="card note-card" style="margin-top: 18px;">
-            <div class="kicker" id="countdown-label"></div>
-            <div class="stat-value" id="countdown-value"></div>
+          <span class="kicker">RC Cup Template</span>
+          <h1>Site Generator</h1>
+          <p class="lead">Vul alles in en exporteer een complete site als ZIP.</p>
+          <div class="row">
+            <a class="btn" href="home.html">Bekijk template</a>
           </div>
         </div>
       </section>
 
       <section>
         <div class="container">
-          <div class="grid cols-3 responsive-1" id="stats-grid"></div>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <div class="grid cols-3 responsive-1" id="about-grid"></div>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <span class="kicker" id="team-kicker"></span>
-          <h2 id="team-title"></h2>
-          <div class="grid cols-4 responsive-1" id="team-grid"></div>
-        </div>
-      </section>
-
-      <section id="gallery">
-        <div class="container">
-          <span class="kicker" id="gallery-kicker"></span>
-          <h2 id="gallery-title"></h2>
-          <div class="grid cols-3 responsive-1" id="gallery-grid"></div>
-        </div>
-      </section>
-
-      <section id="sponsors">
-        <div class="container">
-          <span class="kicker" id="sponsors-kicker"></span>
-          <h2 id="sponsors-title"></h2>
-          <div class="grid cols-3 responsive-1" id="sponsor-grid"></div>
-          <div class="card note-card" style="margin-top: 20px;">
-            <h3 id="sponsor-cta-title"></h3>
-            <p class="muted" id="sponsor-cta-text"></p>
-            <div class="row" id="sponsor-cta-buttons"></div>
+          <div class="grid cols-3 responsive-1">
+            <div class="card gen-controls">
+              <h2>Bestand kiezen</h2>
+              <label class="form-field">
+                <span>Bestand</span>
+                <select id="file-select"></select>
+              </label>
+              <label class="form-field">
+                <span>Taal</span>
+                <select id="lang-select">
+                  <option value="nl">Nederlands</option>
+                  <option value="en">English</option>
+                </select>
+              </label>
+              <div class="muted gen-current" id="current-file"></div>
+              <div class="row">
+                <button class="btn" id="reset-file" type="button">Reset bestand</button>
+                <button class="btn" id="reload-all" type="button">Alles opnieuw laden</button>
+              </div>
+              <div class="muted" id="json-status"></div>
+            </div>
+            <div class="card gen-span-2">
+              <h2>Velden</h2>
+              <div class="gen-form" id="form-container"></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact">
+      <section>
         <div class="container">
-          <h2 id="contact-title"></h2>
-          <p class="muted" id="contact-lead"></p>
+          <h2>Assets</h2>
+          <p class="muted">Upload extra afbeeldingen of bestanden die mee in de ZIP moeten.</p>
           <div class="card">
-            <div class="muted" style="margin-bottom: 12px;">Email: <span id="contact-email"></span></div>
-            <form id="contact-form"></form>
+            <input id="asset-upload" type="file" multiple>
+            <div class="gen-asset-list" id="asset-list"></div>
+            <div class="muted">Standaard assets en HTML pagina's worden automatisch toegevoegd.</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Output</h2>
+          <div class="card">
             <div class="row">
-              <button class="btn primary" id="contact-submit" type="submit"></button>
+              <button class="btn primary" id="generate-zip" type="button">Genereer ZIP</button>
+              <div class="muted" id="zip-status"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <div>RC Cup Team Template</div>
-      </div>
-    </footer>
-
-    <script src="assets/script.js" defer></script>
+    <script src="assets/generator.js" defer></script>
   </body>
 </html>

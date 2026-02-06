@@ -23,6 +23,7 @@ Deze template is gebouwd voor RC Cup teams die snel een professionele website wi
 - **Content via JSON**: elke pagina heeft een eigen JSON bestand.
 - **Taalkeuze**: data staat in `data/nl/` en `data/en/`.
 - **Nav/Brand gedeeld**: in `data/site.json`.
+- **Generator (lokaal)**: er is een generator‑pagina om data te vullen en een ZIP te exporteren.
 
 ---
 
@@ -31,6 +32,7 @@ Deze template is gebouwd voor RC Cup teams die snel een professionele website wi
 ```
 /
 ├─ index.html
+├─ home.html
 ├─ info.html
 ├─ sponsors.html
 ├─ terms.html
@@ -148,6 +150,25 @@ Je hoeft dit dus maar 1x aan te passen.
 1. Maak nieuw JSON bestand in `data/nl/` en `data/en/`.
 2. Maak nieuwe HTML pagina (kopie van `test.html`).
 3. Voeg render‑logica toe in `assets/script.js`.
+
+---
+
+## Generator (alleen lokaal)
+
+De generator is bedoeld om content snel in te vullen en een ZIP te exporteren.
+
+- Generator = `index.html`
+- Originele homepage = `home.html`
+- Export ZIP zet `home.html` automatisch om naar `index.html`
+
+### Releases op GitHub
+
+Voor GitHub releases gebruik ik **altijd de originele template zonder generator files**.
+
+Voor een release:
+1. Hernaam `home.html` naar `index.html`.
+2. Verwijder de generator files: `index.html` (generator) en `assets/generator.js`.
+3. Upload de “schone” template.
 
 ---
 
