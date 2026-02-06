@@ -1,8 +1,39 @@
 ﻿(() => {
   const baseHeight = 60;
+  const PREVIEW_KEY = 'rc-cup-preview';
+  const searchParams = new URLSearchParams(window.location.search);
+  const isPreview = searchParams.get('preview') === '1';
+  const previewLang = searchParams.get('lang');
+  if (isPreview && (previewLang === 'nl' || previewLang === 'en')) {
+    localStorage.setItem('lang', previewLang);
+  }
 
   const qs = sel => document.querySelector(sel);
   const qsa = sel => Array.from(document.querySelectorAll(sel));
+
+  const getPreviewPayload = () => {
+    try {
+      return JSON.parse(localStorage.getItem(PREVIEW_KEY));
+    } catch (err) {
+      return null;
+    }
+  };
+
+  const mapPreviewHref = (href) => {
+    if (!href) return '#';
+    if (!isPreview) return href;
+    if (/^(https?:|mailto:|tel:)/i.test(href)) return href;
+    const parts = href.split('#');
+    const base = parts[0];
+    const hash = parts[1];
+    if (!base.includes('.html')) return href;
+    const lang = localStorage.getItem('lang');
+    const url = new URL(base, window.location.origin);
+    url.searchParams.set('preview', '1');
+    if (lang === 'nl' || lang === 'en') url.searchParams.set('lang', lang);
+    const path = url.pathname.replace(/^\//, '');
+    return path + url.search + (hash ? `#${hash}` : '');
+  };
 
   const setText = (id, value) => {
     const el = document.getElementById(id);
@@ -22,7 +53,7 @@
   const createLink = (label, href, className) => {
     const link = document.createElement('a');
     link.textContent = label;
-    link.href = href || '#';
+    link.href = mapPreviewHref(href || '#');
     if (className) link.className = className;
     return link;
   };
@@ -488,13 +519,20 @@
       const lang = storedLang === 'en' || storedLang === 'nl' ? storedLang : 'nl';
       document.documentElement.lang = lang;
 
-      const [siteRes, pageRes] = await Promise.all([
-        fetch('data/site.json', { cache: 'no-store' }),
-        fetch(`data/${lang}/${page}.json`, { cache: 'no-store' })
+      const loadJson = async (path) => {
+        if (isPreview) {
+          const payload = getPreviewPayload();
+          if (payload && payload.files && payload.files[path]) return payload.files[path];
+        }
+        const res = await fetch(path, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`Failed to load ${path}`);
+        return res.json();
+      };
+
+      const [siteData, data] = await Promise.all([
+        loadJson('data/site.json'),
+        loadJson(`data/${lang}/${page}.json`)
       ]);
-      if (!siteRes.ok || !pageRes.ok) return;
-      const siteData = await siteRes.json();
-      const data = await pageRes.json();
       applyMeta(data.meta);
       renderNav(siteData, lang);
       switch (page) {
@@ -528,4 +566,13 @@
   };
 
   document.addEventListener('DOMContentLoaded', init);
+
+  if (isPreview) {
+    let refreshTimer;
+    window.addEventListener('storage', (event) => {
+      if (event.key !== PREVIEW_KEY) return;
+      if (refreshTimer) clearTimeout(refreshTimer);
+      refreshTimer = setTimeout(() => window.location.reload(), 150);
+    });
+  }
 })();

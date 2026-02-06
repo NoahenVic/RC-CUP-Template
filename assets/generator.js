@@ -31,6 +31,8 @@
     { path: 'assets/img/placeholder.svg', source: 'assets/img/placeholder.svg' }
   ];
 
+  const PREVIEW_KEY = 'rc-cup-preview';
+
   const state = {
     currentId: 'site',
     currentLang: 'nl',
@@ -47,6 +49,7 @@
   const assetListEl = qs('#asset-list');
   const zipStatusEl = qs('#zip-status');
   const formContainerEl = qs('#form-container');
+  const previewBtnEl = qs('#open-preview');
 
   const setStatus = (msg, isError) => {
     statusEl.textContent = msg || '';
@@ -56,6 +59,20 @@
   const setZipStatus = (msg, isError) => {
     zipStatusEl.textContent = msg || '';
     zipStatusEl.style.color = isError ? '#d62828' : 'var(--muted)';
+  };
+
+  let saveTimer = null;
+  const saveDraft = () => {
+    const payload = { updatedAt: Date.now(), files: {} };
+    state.data.forEach((value, path) => {
+      payload.files[path] = value;
+    });
+    localStorage.setItem(PREVIEW_KEY, JSON.stringify(payload));
+  };
+
+  const scheduleSave = () => {
+    if (saveTimer) clearTimeout(saveTimer);
+    saveTimer = setTimeout(saveDraft, 200);
   };
 
   const initSelectors = () => {
@@ -104,12 +121,14 @@
     if (!original) return;
     state.data.set(path, deepClone(original));
     renderForm();
+    scheduleSave();
     setStatus('Teruggezet naar template');
   };
 
   const reloadAll = async () => {
     await loadFiles();
     renderForm();
+    scheduleSave();
     setStatus('Alles opnieuw geladen');
   };
 
@@ -350,6 +369,7 @@
   const updateValue = (path, value) => {
     const data = getCurrentView();
     setValueAtPath(data, path, value);
+    scheduleSave();
   };
 
   const createField = (label, value, path) => {
@@ -412,6 +432,7 @@
         const template = arr.length ? makeEmptyLike(arr[0]) : '';
         arr.push(template);
         renderForm();
+        scheduleSave();
       });
       header.appendChild(title);
       header.appendChild(addBtn);
@@ -433,6 +454,7 @@
           const arr = getValueAtPath(data, path);
           arr.splice(index, 1);
           renderForm();
+          scheduleSave();
         });
         removeRow.appendChild(removeBtn);
         itemWrap.appendChild(removeRow);
@@ -491,18 +513,26 @@
     renderForm();
   };
 
+  const openPreview = () => {
+    const lang = langSelectEl.value || state.currentLang || 'nl';
+    localStorage.setItem('lang', lang);
+    window.open(`home.html?preview=1&lang=${lang}`, '_blank');
+  };
+
   fileSelectEl.addEventListener('change', onSelectionChange);
   langSelectEl.addEventListener('change', onSelectionChange);
   qs('#reset-file').addEventListener('click', resetCurrent);
   qs('#reload-all').addEventListener('click', reloadAll);
   qs('#asset-upload').addEventListener('change', e => addUploadedFiles(e.target.files));
   qs('#generate-zip').addEventListener('click', downloadZip);
+  if (previewBtnEl) previewBtnEl.addEventListener('click', openPreview);
 
   initSelectors();
   loadFiles()
     .then(() => {
       onSelectionChange();
       renderAssets();
+      saveDraft();
     })
     .catch(err => setStatus(err.message, true));
 })();
