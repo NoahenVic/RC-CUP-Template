@@ -24,11 +24,17 @@
     { path: 'terms.html', source: 'terms.html' },
     { path: 'test.html', source: 'test.html' },
     { path: 'thankyou.html', source: 'thankyou.html' },
-    { path: 'vercel.json', source: 'vercel.json' },
     { path: 'README.md', source: 'README.md' },
     { path: 'assets/styles.css', source: 'assets/styles.css' },
     { path: 'assets/script.js', source: 'assets/script.js' },
     { path: 'assets/img/placeholder.svg', source: 'assets/img/placeholder.svg' }
+  ];
+
+  const inlineFiles = [
+    {
+      path: 'vercel.json',
+      content: '{\n  \"cleanUrls\": true,\n  \"trailingSlash\": false\n}\n'
+    }
   ];
 
   const PREVIEW_KEY = 'rc-cup-preview';
@@ -290,6 +296,10 @@
     state.data.forEach((value, path) => {
       const text = JSON.stringify(value, null, 2);
       files.push({ path, data: encoder.encode(text) });
+    });
+
+    inlineFiles.forEach(item => {
+      files.push({ path: item.path, data: encoder.encode(item.content) });
     });
 
     const staticResponses = await Promise.all(
